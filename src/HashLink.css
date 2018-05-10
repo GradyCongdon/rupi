@@ -1,0 +1,54 @@
+.hash-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* container gutter - half vw extra */
+  margin: 1rem calc(-1.5rem - 7.5vw);
+  width: 115vw;
+  padding: 0.5rem 0;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  /*
+  background-color: #fbfbfb;
+  box-shadow: #8080801a 0px 0px 20px 0px inset;
+  */
+}
+
+@media (min-width: 1024px) {
+  .hash-link {
+    margin: 1rem 0;
+    width: unset;
+  /*
+    background-color: unset;
+    box-shadow: none;
+  */
+  }
+}
+
+
+.hash-link hr {
+  background-color: #ccc;
+  height: 1rem;
+  margin: 0;
+}
+.hash-link hr.hidden {
+  opacity: 0;
+}
+
+.hash-link p {
+  font-size: .75rem;
+  margin: 0.15rem;
+}
+
+.hash-link--start {
+  margin-top: 3rem;
+  border-top: none;
+  font-weight: bold;
+}
+
+.hash-link--end {
+  margin-bottom: -1rem;
+  border-bottom: none;
+  font-weight: bold;
+}
